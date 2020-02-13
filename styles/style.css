@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url("main.css");
+@media print {
+body { background‐color: white; }
+header { display: none; }
+h1, h2, p, td, tr {
+	color: black !important;
+}
+}
+
+body {
+	background: center top #353C51 url("../img/penta.jpg") scroll no-repeat;
+	font-family: "Arial";
+
+}
+
+header {
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.50);
+}
+
+nav{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	width: 600px;
+	top: 120px;
+}
+
+nav ul{
+	margin: 0;
+	list-style: none;
+
+	margin-right: 10px;
+	background-color: #8a0303;
+	height: 30px;
+	border-radius: 4px;
+}
+
+nav ul:hover{
+	filter: brightness(200%);
+}
+
+
+
+nav ul li{
+	float: left;
+	padding: 2px;
+	margin-right: 10px;
+	height: 20px;
+	position: relative;
+	top: 3px;
+
+	background-color: black;
+	border-radius: 4px;
+
+}
+
+nav ul li a:hover{
+	color: #8a0303;
+}
+
+.menu a{
+	text-decoration: none;
+	color: white;
+	padding: 2px;
+}
+
+h1, h2 {
+	color: white ;
+	text-shadow: 4px 4px lightblue ;
+}
+
+p {
+	color: white ;
+	font-size: 24px;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+article {
+	padding: 20px;
+}
+
+#flight-statuses{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+	color: #353C51;
+}
+
+table{
+	line-height: 40px;
+}
+
+tr:nth-child(2n-1){
+	background-color: white;
+}
+
+tr:nth-child(2n){
+	background-color: lightgray;
+}
+
+
+th{
+	/*need to flip colors*/
+	background-color: black;
+	color: white;
+}
+
+td{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#flight-statuses tr:hover{
+	filter: brightness(75%);
+	border: 1px solid black;
+}
+
+.cancelled {
+	color: red;
+	font-weight: bold;
+}
+
+.departed {
+	color: green;
+}
+
+.departed::after{
+	content:  '\2708'
+}
+
